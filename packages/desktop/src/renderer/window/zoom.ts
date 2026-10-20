@@ -86,9 +86,9 @@ const setPinchZoomEnabled = (enabled: boolean) => {
 
 const resetZoom = () => applyZoom(1)
 
-const zoomIn = () => applyZoom(clamp(requestedZoom + 0.2))
+const zoomIn = () => applyZoom(clamp(requestedZoom + 0.1))
 
-const zoomOut = () => applyZoom(clamp(requestedZoom - 0.2))
+const zoomOut = () => applyZoom(clamp(requestedZoom - 0.1))
 
 const resetWheelPinch = () => {
   clearTimeout(wheelPinch?.timeout)

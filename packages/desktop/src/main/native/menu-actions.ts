@@ -57,11 +57,11 @@ export function runDesktopMenuAction(
 
       return
     case "view.zoomIn":
-      if (win) setZoomFactor(win, win.webContents.getZoomFactor() + 0.2)
+      if (win) setZoomFactor(win, win.webContents.getZoomFactor() + 0.1)
 
       return
     case "view.zoomOut":
-      if (win) setZoomFactor(win, win.webContents.getZoomFactor() - 0.2)
+      if (win) setZoomFactor(win, win.webContents.getZoomFactor() - 0.1)
 
       return
     case "view.toggleFullscreen":
